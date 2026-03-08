@@ -1,0 +1,70 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.task-section {
+  padding: 60px 20px;
+}
+.task-section .container {
+  max-width: 1000px;
+  margin: auto;
+  background: #8ecf8b;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.task-section .task-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.task-section .task-header h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin: 0;
+}
+.task-section .task-header .company {
+  background: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.task-section .task-content h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+.task-section .task-content p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+.task-section .task-content .objective {
+  margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+.task-section .task-content .steps {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+.task-section .task-content .steps ol {
+  padding-left: 20px;
+}
+.task-section .task-content .steps ol li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+.task-section .task-content .steps ol li strong {
+  color: #2c3e50;
+}/*# sourceMappingURL=task8.css.map */

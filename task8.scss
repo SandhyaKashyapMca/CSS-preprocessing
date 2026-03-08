@@ -1,0 +1,102 @@
+
+// VARIABLES
+$primary-color: #8ecf8b;
+$secondary-color: #2c3e50;
+$text-color: #333;
+$white: #fff;
+$radius: 10px;
+$shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+// MIXIN
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// GLOBAL STYLE
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+// MAIN SECTION
+.task-section {
+  padding: 60px 20px;
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    background: $primary-color;
+    padding: 40px;
+    border-radius: $radius;
+    box-shadow: $shadow;
+  }
+
+  .task-header {
+    @include flex-center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    h1 {
+      font-size: 28px;
+      color: $secondary-color;
+      margin: 0;
+    }
+
+    .company {
+      background: $white;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+      color: $secondary-color;
+      box-shadow: $shadow;
+    }
+  }
+
+  .task-content {
+
+    h2 {
+      color: $secondary-color;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: $text-color;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .objective {
+      margin-bottom: 25px;
+      background: rgba(255,255,255,0.7);
+      padding: 20px;
+      border-radius: $radius;
+    }
+
+    .steps {
+      background: rgba(255,255,255,0.7);
+      padding: 20px;
+      border-radius: $radius;
+
+      ol {
+        padding-left: 20px;
+
+        li {
+          margin-bottom: 12px;
+          font-size: 16px;
+          color: $text-color;
+          line-height: 1.5;
+
+          strong {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+
+  }
+
+}
